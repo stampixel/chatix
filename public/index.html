@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>chatix</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="defualt theme.css">
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/anonymous-mask.png">
+    <style></style>
+  </head>
+  <body style="margin-bottom: 53px;">
+    <div id="chat-sidebar">
+      <h1 id="room-name"></h1>
+      <ul id="users"></ul>
+
+    </div>
+
+    <article class="container">
+      <div id="chat-messages" class="chat-messages">
+
+        <!-- <div class="message">
+          <p class="meta">Username <span>Time</span></p>
+          <p class="text">
+            This is a test message
+          </p>
+        </div> -->
+
+      </div>
+    </article>
+    <footer id="footer">
+      <div class='container'>
+        <form action=""></form>
+        <input type="text" id="messageBox" placeholder=""/>
+        <!-- <button id="send" title="Enter" type="submit">Send Message</button> -->
+        <script>
+        //   document.querySelector("#messageBox").addEventListener("keyup", event => {
+        //     if(event.key !== "Enter") return; 
+        //     document.querySelector("#send").click();
+        //     event.preventDefault();
+        // });
+        </script>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

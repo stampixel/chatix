@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+body, input, textarea {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 13px;
+    tab-size: 4;
+    -moz-tab-size: 4;
+}
+
+body {
+    color: #a6a28c;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    overflow-y: scroll;
+    font-family: monospace;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* height: 100%; */
+}
+
+.chat-messages {
+    padding-top: 2em;  
+    overflow-x: hidden;
+    border-left: 1px solid;
+}
+
+
+.message {
+    padding-bottom: 1em;
+    /*! display: inline-block; */
+}
+
+.message {
+    border-left: 1px solid rgba(125, 122, 104, 0.5) !important;
+}
+
+.message, .refmessage {
+    padding-bottom: 1em;
+
+} 
+
+.message .text {
+    word-wrap: break-word;
+}
+
+.username {
+  float: left;
+  width: 16em;
+  margin-left: -17em;
+  margin-right: 1em;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  /*! display: inline-block; */
+}
+
+.text {
+    margin: 0;
+    margin-left: 1em;  
+    /*! display: inline-block; */
+}
+
+#footer {
+    margin: auto;
+    position: fixed;
+    bottom: 80px;
+    width: 100%;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+
+#messageBox {
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    margin: auto;
+    height: 38px;
+}
+
+input, textarea {
+  outline: none;
+  resize: none;
+}
+
+#room-name {
+    position:fixed;
+}
+
+#users {
+    position:fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .chat-messages {
+      border: none;
+    }
+    #chat-messages {
+      padding: 0.5em;
+    }
+    .message {
+      padding-bottom: 0.5em;
+    }
+    .username {
+      margin: 0;
+      float: none;
+      text-align: left;
+      display: inline;
+    }
+    .text {
+      display: inline;
+    }
+    /* #sidebar {
+      top: 0.5em;
+      bottom: auto;
+      right: 0.5em;
+      border: none;
+    } */
+  }
+
+/* #send {
+    width: 60%;
+    height: 30px;
+    position: absolute;
+} */

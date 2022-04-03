@@ -1,0 +1,22 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "Real time chat website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "pm2 start server.js",
+    "stop": "pm2 stop server.js"
+  },
+  "author": "stampixel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "pm2": "^5.2.0",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
