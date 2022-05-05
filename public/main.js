@@ -25,7 +25,6 @@ const roomName = document.getElementById('room-name');
 const userList = document.getElementById('users');
 
 
-
 const colorList = ["F903E6", "0321F9", "FF0000", '46FF00', '00FFE0', 'F7FF00', '000000'];
 const random = Math.floor(Math.random() * colorList.length); // gets a random color from the list
 const channel = window.location.search.replace(/^\?/, ''); // Thanks to hack.chat for this line
